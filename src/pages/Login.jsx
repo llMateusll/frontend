@@ -38,7 +38,7 @@ export default function Login() {
 
   return (
     <main className="dark min-h-screen">
-      <div className="min-h-screen flex bg-surface-950 transition-colors">
+      <div className="dark min-h-screen flex bg-surface-950 text-white transition-colors">
       {/* Left panel - branding with sophisticated animated gradient */}
       <div className="hidden lg:flex lg:w-1/2 relative overflow-hidden items-center justify-center p-12 bg-surface-900">
         {/* Animated gradient background modern blue/cyan */}

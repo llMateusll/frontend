@@ -36,7 +36,7 @@ export default function ForgotPassword() {
   }
 
   return (
-    <div className="min-h-screen flex bg-surface-50 dark:bg-surface-950 transition-colors">
+    <div className="dark min-h-screen flex bg-surface-950 text-white transition-colors">
       {/* Left branding panel */}
       <div className="hidden lg:flex lg:w-1/2 relative overflow-hidden items-center justify-center p-12 bg-surface-900">
         <div className="absolute inset-0 opacity-80" style={{ background: 'linear-gradient(135deg, #1E3A8A 0%, #312E81 50%, #064E3B 100%)' }} />

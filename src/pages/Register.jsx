@@ -59,7 +59,7 @@ export default function Register() {
 
   return (
     <main className="dark min-h-screen">
-      <div className="min-h-screen flex bg-surface-950 transition-colors">
+      <div className="dark min-h-screen flex bg-surface-950 text-white transition-colors">
       {/* Left panel */}
       <div className="hidden lg:flex lg:w-1/2 relative overflow-hidden items-center justify-center p-12">
         <div
