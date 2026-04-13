@@ -1,0 +1,124 @@
+/* ===== FINVEST BASE ===== */
+.fin-root {
+    font-family: 'Sora', sans-serif;
+    display: flex;
+    min-height: 100vh;
+    background: #f0f2f7;
+}
+
+.fin-sidebar {
+    width: 220px;
+    background: #0e1729;
+    color: #fff;
+    padding: 20px;
+}
+
+.fin-logo {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.fin-nav-item {
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.fin-nav-item.active {
+    background: #6366f1;
+    color: #fff;
+}
+
+.fin-main {
+    flex: 1;
+    padding: 20px;
+}
+
+/* TOPBAR */
+.fin-topbar h1 {
+    font-size: 20px;
+}
+
+/* CARDS */
+.fin-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    margin-top: 20px;
+}
+
+.fin-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px;
+}
+
+.fin-card-main {
+    background: linear-gradient(135deg, #4338ca, #6366f1);
+    color: #fff;
+}
+
+.fin-card-label {
+    font-size: 12px;
+    opacity: 0.7;
+}
+
+.fin-card-value {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* CHART */
+.fin-chart-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* TABLE */
+.fin-table {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.fin-table th,
+.fin-table td {
+    padding: 10px;
+    text-align: left;
+}
+
+/* GOALS */
+.fin-goals {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.fin-goal-bar {
+    background: #eee;
+    height: 6px;
+    border-radius: 10px;
+}
+
+.fin-goal-fill {
+    height: 100%;
+    background: #00c896;
+    border-radius: 10px;
+}
+
+/* TRANSACTIONS */
+.fin-tx-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.trend-up {
+    color: green;
+}
+
+.trend-down {
+    color: red;
+}

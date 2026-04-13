@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-sans antialiased text-surface-800 bg-surface-50 scroll-smooth;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  .dark body {
+    @apply text-surface-100 bg-surface-950;
+  }
+}
+
+@layer components {
+  /* Scrollbar Customization */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-surface-300 dark:bg-surface-700 rounded-full;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-surface-400 dark:bg-surface-600;
+  }
+
+  /* Utility classes */
+  .glass {
+    @apply bg-white/70 dark:bg-surface-800/70 backdrop-blur-xl border border-white/20 dark:border-surface-700/50;
+  }
+
+  .glass-dark {
+    @apply bg-surface-900/80 backdrop-blur-xl border border-surface-700/50;
+  }
+}
+
+/* Animations that we want accessible outside Tailwind classes or just custom overrides */
+.animate-delay-100 { animation-delay: 100ms; }
+.animate-delay-200 { animation-delay: 200ms; }
+.animate-delay-300 { animation-delay: 300ms; }
+.animate-delay-400 { animation-delay: 400ms; }
+
+/* Recharts Customization for Dark Mode */
+.dark .recharts-text {
+  fill: #9CA3AF !important;
+}
+.dark .recharts-cartesian-grid line {
+  stroke: #374151 !important;
+}
+.dark .recharts-tooltip-wrapper .recharts-default-tooltip {
+  background: #1F2937 !important;
+  border-color: #374151 !important;
+  border-radius: 0.75rem !important;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
+}
+.dark .recharts-tooltip-label {
+  color: #F3F4F6 !important;
+}
+.recharts-tooltip-wrapper .recharts-default-tooltip {
+  border-radius: 0.75rem !important;
+  border: none !important;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
+}
+
+/* Number display tabular data */
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
